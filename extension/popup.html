@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keyword Search</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        width: 200px;
+      }
+      #result {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none; /* Hide by default */
+      }
+      .found {
+        color: green;
+      }
+      .not-found {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Search for Keyword</h3>
+    <input type="text" id="keyword" placeholder="Enter keyword" />
+    <button id="searchButton">Search</button>
+
+    <div id="result" class="result">
+      <p id="resultMessage"></p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
