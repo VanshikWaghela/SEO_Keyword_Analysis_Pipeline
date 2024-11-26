@@ -38,15 +38,14 @@ function displayData(data, suggestions) {
   } else {
       // Main keyword details
       let htmlContent = `
-          <h3>${data["Keyword Name"]}</h3>
-          <p><strong>Category:</strong> ${data["Category"]}</p>
-          <p><strong>Region:</strong> ${data["Region"]}</p>
-          <p><strong>Language:</strong> ${data["Language"]}</p>
-          <p><strong>CPC:</strong> ${data["CPC (Cost Per Click)"]}</p>
-          <p><strong>Search Volume:</strong> ${data["Search Volume"]}</p>
-          <p><strong>Monthly Trend Chart of keyword:</strong></p>
-          <img src="http://127.0.0.1:5000/charts/${data["Keyword Name"]}/trends" alt="Trend Chart" style="width: 100%; margin-top: 10px;" />
-          
+          <h3>${data["keyword_name"]}</h3>
+          <p><strong>Category:</strong> ${data["category"]}</p>
+          <p><strong>Region:</strong> ${data["region"]}</p>
+          <p><strong>Language:</strong> ${data["language"]}</p>
+          <p><strong>CPC:</strong> ${data["cpc"]}</p>
+          <p><strong>Search Volume:</strong> ${data["search_volume"]}</p>
+          <p><strong>Monthly Keyword Search Volume:</strong></p>
+          <img src="http://127.0.0.1:5000/charts/${data["keyword_name"]}/"cpc_vs_clicks" alt="Trend Chart" style="width: 100%; margin-top: 10px;" />
       `;
 
       // Suggested keywords section
